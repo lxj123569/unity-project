@@ -68,8 +68,8 @@ public class PlayerController : MonoBehaviour
     public void Move()
     {
         rb.velocity = new Vector2(inputDirection.x * speed * Time.deltaTime, rb.velocity.y);//x,y坐标移动，以速度的方式
-        Debug.Log(inputDirection.x);
-        Debug.Log(speed);
+        //Debug.Log(inputDirection.x);
+        //Debug.Log(speed);
         //人物翻转
         if (inputDirection.x > 0)
             

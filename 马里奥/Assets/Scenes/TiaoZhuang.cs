@@ -5,15 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class TiaoZhuang : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public int sceneIndex;
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        changeScene();
     }
-
-    // Update is called once per frame
-    void Update()
+    public void changeScene()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(sceneIndex);
     }
 }
